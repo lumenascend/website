@@ -1,0 +1,79 @@
+---
+const navLinks = [
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  // { name: "Blog", href: "/blog" },
+];
+---
+
+<nav class="bg-white" x-data="{ isMenuOpen: false }">
+  <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center uppercase text-2xl font-bold text-gray-700">
+          <img src="/logo.svg" alt="Logo" class="h-16 w-auto mr-2"> <span class="font-quicksand">Lumen Ascend</span>
+        </a>
+      </div>
+      <div class="hidden md:flex ml-auto space-x-4">
+        {navLinks.map(link => (
+          <a
+            href={link.href}
+            class="text-gray-700 hover:text-royalPlum px-3 py-2 rounded-md text-sm font-medium"
+          >
+            {link.name}
+          </a>
+        ))}
+      </div>
+      <div class="hidden md:flex ml-4">
+        <a
+          href="/contact"
+          class="bg-royalPlum text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-sunsetGold hover:text-black transition duration-300 ease-in-out"
+        >
+          Contact Us
+        </a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button
+          class="text-gray-700 hover:text-purple-600 focus:outline-none"
+          @click="isMenuOpen = !isMenuOpen"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="md:hidden"
+      x-show="isMenuOpen"
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="opacity-0 transform scale-95"
+      x-transition:enter-end="opacity-100 transform scale-100"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="opacity-100 transform scale-100"
+      x-transition:leave-end="opacity-0 transform scale-95"
+    >
+      <div class="space-y-1 px-2 pt-2 pb-3 z-20">
+        {navLinks.map(link => (
+          <a
+            href={link.href}
+            class="block text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-base font-medium"
+          >
+            {link.name}
+          </a>
+        ))}
+        <a
+          href="/contact"
+          class="block bg-royalPlum text-white px-4 py-2 rounded-md text-base font-medium hover:bg-sunsetGold hover:text-black transition duration-300 ease-in-out"
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

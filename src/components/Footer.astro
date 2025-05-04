@@ -1,0 +1,14 @@
+<hr class="border-royalPlum border-t-8 m-auto">
+<footer class="max-w-7xl flex flex-col md:flex-row items-center md:items-start justify-center m-auto p-8 md:p-0">
+    <p class="p-4 pt-20 grow">&copy; <span id="copyYear"></span> Lumen Ascend Software Solutions<span class="text-orange-500">.</span> </p>
+</footer>
+
+<script>
+    let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+    let yearContainer = document.getElementById("copyYear");
+
+    if (yearContainer) {
+        yearContainer.innerHTML = currentYear + " —";
+    }
+</script>

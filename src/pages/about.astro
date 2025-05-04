@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AboutUs from '../assets/img/about-lumen.jpg';
+---
+
+<Layout>
+    <section class="max-w-5xl mx-auto py-16">
+        <h1 class="text-5xl pb-7">About Lumen</h1>
+        <p class="md:w-3/5 pb-7">We have fused our extensive expertise in software design, development, and project management to create a lean, end-to-end solution tailored to your needs.</p>
+        <p class="md:w-3/5 pb-7">From the initial concept and creation to development, deployment, and beyond, we streamline every step of the process to deliver curated, innovative results. Our mission is to empower businesses by simplifying complex challenges and driving impactful solutions that stand the demands of the forever changing digital landscape.</p>
+        <img src={AboutUs.src} alt="" class="mx-auto w-auto pb-7" />
+        <div class="flex md:flex-row gap-20">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl pb-7">Sammy</h2>
+                <p class="pb-7">A highly accomplished designer with extensive experience collaborating with global brands and industry disruptors across a diverse range of sectors. Known for an exceptional eye for detail and a deep empathy for the end user's needs.
+                </p>
+                <p class="pb-7">Creating innovative, user-centric solutions that seamlessly integrate design and functionality. Their ability to navigate complex challenges and deliver impactful results has made them a trusted expert in the field.</p>
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl pb-7">Ollie</h2>
+                <p class="pb-7">Over a decade of experience in the Web Industry, expertly managing and delivering software projects from conception to completion and beyond. A proven track record includes working with global brands, ensuring high-quality results while navigating complex project lifecycles.</p>
+            </div>
+        </div>
+    </section>
+
+</Layout>
