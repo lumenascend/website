@@ -1,11 +1,37 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import background from '../assets/vid/bg.mp4';
+import ContactBanner from '../components/Contact-banner.astro';
+import Values from '../components/Values.astro';
+import Faqs from '../components/Faqs.astro';
+import ServicesGrid from '../components/Services-grid.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<section class="h-screen">
+		<video class="w-full h-full object-cover brightness-50" autoplay loop muted>
+			<source src={background} type="video/mp4">
+		</video>
+		<div class="absolute top-[10%] justify-center flex flex-col max-w-7xl m-auto inset-8 z-10">
+			<h1 class="flex  text-8xl text-white mb-4">
+				Solving company problems
+			</h1>
+			<h2 class="text-8xl text-white">
+				With digital solutions<span class="text-orange-500">.</span>
+			</h2>
+		</div>
+	</section>
+
+	<section class="text-center pb-10 px-8 max-w-7xl mx-auto">
+		<h2 class="font-bold pt-16 pb-11 text-2xl">Our Services</h2>
+		<p class="text-xl max-w-xl mx-auto">Tailored solutions for your success — elevate your experience with our exceptional, comprehensive services.</p>
+	</section>
+
+	<ServicesGrid />
+
+	<ContactBanner />
+
+	<Values />
+
+	<Faqs />
 </Layout>
