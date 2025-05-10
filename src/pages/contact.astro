@@ -1,7 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/Contact-form.astro';
+import ServicesGrid from '../components/Services-grid.astro';
 ---
 
 <Layout>
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col py-20 p-8">
+        <h1 class="text-royalPlum">The way to get started, is to quit talking and begin doing. <br /> Get in touch today</h1>
+        <ContactForm />
+    </section>
+
+    <section class="text-center pb-10 px-8 max-w-7xl mx-auto">
+		<h2 class="font-bold pt-16 pb-11 text-2xl">Our Services</h2>
+		<p class="text-xl max-w-xl mx-auto">Tailored solutions for your success — elevate your experience with our exceptional, comprehensive services.</p>
+	</section>
+
+    <ServicesGrid />
     
 </Layout>

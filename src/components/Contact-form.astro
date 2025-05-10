@@ -1,0 +1,103 @@
+<form 
+  name="contact" 
+  method="POST" 
+  data-netlify="true" 
+  class="space-y-6 bg-white pt-32"
+>
+  <input type="hidden" name="form-name" value="contact" />
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- First Name -->
+    <div class="relative">
+      <input 
+        type="text" 
+        name="first-name" 
+        id="first-name" 
+        required 
+        class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm focus:outline-none focus:ring-2 focus:ring-royalPlum focus:border-royalPlum"
+      />
+      <label 
+        for="first-name" 
+        class="absolute left-4 top-2.5 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-royalPlum"
+      >
+        First Name
+      </label>
+    </div>
+
+    <!-- Last Name -->
+    <div class="relative">
+      <input 
+        type="text" 
+        name="last-name" 
+        id="last-name" 
+        required 
+        class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm focus:outline-none focus:ring-2 focus:ring-royalPlum focus:border-royalPlum"
+      />
+      <label 
+        for="last-name" 
+        class="absolute left-4 top-2.5 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-royalPlum"
+      >
+        Last Name
+      </label>
+    </div>
+  </div>
+
+  <!-- Email -->
+  <div class="relative">
+    <input 
+      type="email" 
+      name="email" 
+      id="email" 
+      required 
+      class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm focus:outline-none focus:ring-2 focus:ring-royalPlum focus:border-royalPlum"
+    />
+    <label 
+      for="email" 
+      class="absolute left-4 top-2.5 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-royalPlum"
+    >
+      Email
+    </label>
+  </div>
+
+  <!-- Budget -->
+  <div class="relative">
+    <input 
+      type="text" 
+      name="budget" 
+      id="budget" 
+      required 
+      class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm focus:outline-none focus:ring-2 focus:ring-royalPlum focus:border-royalPlum"
+    />
+    <label 
+      for="budget" 
+      class="absolute left-4 top-2.5 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-royalPlum"
+    >
+      Budget?
+    </label>
+  </div>
+
+  <!-- Message -->
+  <div class="relative">
+    <textarea 
+      name="message" 
+      id="message" 
+      rows="4" 
+      required 
+      class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm focus:outline-none focus:ring-2 focus:ring-royalPlum focus:border-royalPlum"
+    ></textarea>
+    <label 
+      for="message" 
+      class="absolute left-4 top-2.5 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-royalPlum"
+    >
+      Message
+    </label>
+  </div>
+
+  <button 
+    type="submit" 
+    class="flex flex-row gap-2 bg-royalPlum text-white py-2 px-4 rounded-lg hover:bg-sunsetGold hover:text-black transition"
+  >
+    Send Message
+      
+  </button>
+</form>
