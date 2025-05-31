@@ -1,7 +1,51 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Background from '../../assets/img/services/complex-problem-solving.jpg';
+import ContactForm from '../../components/Contact-form.astro';
+const pageTitle = 'Search Engine Optimisation (SEO)';
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle}>
+    <header class="relative h-[75vh] bg-fixed bg-center bg-cover" style={`background-image: url(${Background.src});`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-royalPlum to-transparent opacity-80"></div>
     
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white max-w-7xl mx-auto">
+      <h1 class="text-7xl font-bold py-16">{pageTitle}</h1>
+      <p class="text-3xl text-center">
+        In a crowded digital landscape, ranking at the top of search results is crucial. We help your business stand out with expert SEO strategies that drive organic traffic, boost engagement, and improve visibility.       </p>
+    </div>
+  </header>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <p class="pb-4">Organic traffic and PPC advertising are two primary ways to drive visitors to your website, but they serve different purposes and require different strategies.</p>
+    <ul class="list-disc pl-12 pb-4">
+        <li>Organic Traffic comes from unpaid search results. By optimizing your website for search engines, you can rank higher naturally and attract visitors without ongoing costs. This strategy builds long-term credibility and sustainable growth.</li>
+        <li>PPC (Pay-Per-Click) advertising places your website at the top of search results for targeted keywords, but you pay for each click. This ensures instant visibility, making it an excellent option for fast results and high-competition industries.</li>
+    </ul>
+    <p class="pb-4">A strong digital marketing strategy uses both approaches—leveraging organic SEO for lasting growth and PPC for immediate impact.</p>
+
+    <h2 class="font-bold">What Does Organic Traffic Solve?</h2>
+    <ul class="list-disc pl-12 pb-4">
+        <li>Cost-Effective Visibility – Gain long-term exposure without ongoing ad costs.</li>
+        <li>Higher User Trust – Users trust organic search results more than paid ads.</li>
+        <li>Sustainable Growth – Build an audience that keeps coming back.</li>
+        <li>Better Engagement & Conversions – Attract visitors who are actively searching for your products or services.</li>    
+    </ul>
+
+    <h2 class="font-bold">What Does a PPC Campaign Solve?</h2>
+    <ul class="list-disc pl-12">
+        <li>Low Traffic Websites – Paying for targeted ads is an effective way to kickstart your traffic.</li>
+        <li>Appearing Above the Competition – The search engine game is pay-to-win. Investing in Google’s premium search results puts your website ahead of non-PPC listings.</li>
+        <li>Brand Awareness – Get your brand in front of the right audience at the right time.</li>
+        <li>Lead Generation – Attract high-intent visitors and convert them into customers.</li>
+        <li>Product Launches – Generate buzz and drive traffic to new offerings.</li>
+        <li>Seasonal Campaigns – Planning for Black Friday? Need a holiday sales boost? PPC can deliver targeted results during peak times.</li>    
+    </ul>
+
+  </section>
+  
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col px-4 pb-32">
+        <h3 class="text-royalPlum text-7xl font-bold text-center pt-32">Ready to discuss your project?</h3>
+        <ContactForm />
+    </section>
+
 </Layout>

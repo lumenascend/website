@@ -1,7 +1,48 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Background from '../../assets/img/services/complex-problem-solving.jpg';
+import ContactForm from '../../components/Contact-form.astro';
+const pageTitle = 'Mobile Applications';
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle}>
+    <header class="relative h-[75vh] bg-fixed bg-center bg-cover" style={`background-image: url(${Background.src});`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-royalPlum to-transparent opacity-80"></div>
     
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white max-w-7xl mx-auto">
+      <h1 class="text-7xl font-bold py-16">{pageTitle}</h1>
+      <p class="text-3xl text-center">
+        Have the next best idea in mind? Whether you're a startup, an established business, or an entrepreneur with a game-changing idea, we bring your vision to life with high-performing, scalable mobile applications.      </p>
+    </div>
+  </header>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+
+    <p class="pb-4">When building a mobile app, businesses often face a big decision: develop two separate apps for iOS and Android, or build a single app that works on both. We specialize in efficient, cross-platform development that gives you the best of both worlds—without doubling your budget or timeline.</p>
+
+    <h2 class="font-bold">Faster Time to Market</h2>
+    <p class="pb-4">A cross-platform app can be developed, tested, and launched significantly faster than building two separate native apps. Instead of maintaining two separate codebases, we build once and deploy everywhere—so your app reaches users sooner.</p>
+
+    <h2 class="font-bold">More Cost-Effective</h2>
+    <p class="pb-4">Developing and maintaining a single app that works on both Android and iOS means lower development costs upfront and reduced maintenance in the long run. You don’t need two teams, two roadmaps, or two sets of updates.
+    </p>
+
+    <h2 class="font-bold">Consistent User Experience</h2>
+    <p class="pb-4">We ensure that your app looks and feels consistent across all devices. That means no matter what platform your users are on, they’ll get a seamless, branded experience every time.    </p>
+
+    <h2 class="font-bold">Easier Maintenance & Updates</h2>
+    <p class="pb-4">With one shared codebase, rolling out updates, fixing bugs, and improving features is streamlined. Your app can evolve quickly without waiting for separate approval processes on each platform.</p>
+
+    <h2 class="font-bold">Access to Native Features</h2>
+    <p class="pb-4">Cross-platform doesn’t mean compromise. We can still tap into powerful device features—like cameras, GPS, push notifications, and biometric authentication to deliver rich user experiences that feel just as responsive and capable as native apps.</p>
+
+    <h2 class="font-bold">Scalable for Growth</h2>
+    <p class="pb-4">As your business grows, so can your app. With the right architecture in place, scaling your mobile app’s functionality and performance is straightforward and cost-effective.</p>
+
+  </section>
+  
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col px-4 pb-32">
+        <h3 class="text-royalPlum text-7xl font-bold text-center pt-32">Ready to discuss your project?</h3>
+        <ContactForm />
+    </section>
+
 </Layout>

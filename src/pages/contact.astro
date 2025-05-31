@@ -2,9 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import ContactForm from '../components/Contact-form.astro';
 import ServicesGrid from '../components/Services-grid.astro';
+const pageTitle = 'Ready to transform your business?';
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle}>
     <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col py-20 p-8">
         <h1 class="text-royalPlum">The way to get started, is to quit talking and begin doing. <br /> Get in touch today</h1>
         <ContactForm />

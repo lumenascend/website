@@ -1,7 +1,56 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Background from '../../assets/img/services/complex-problem-solving.jpg';
+import ContactForm from '../../components/Contact-form.astro';
+const pageTitle = 'Web Design';
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle}>
+    <header class="relative h-[75vh] bg-fixed bg-center bg-cover" style={`background-image: url(${Background.src});`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-royalPlum to-transparent opacity-80"></div>
     
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white max-w-7xl mx-auto">
+      <h1 class="text-7xl font-bold py-16">{pageTitle}</h1>
+      <p class="text-3xl text-center">
+        Where user experience meets brand storytelling. A well-crafted website combines purpose and personality, ensuring it not only works seamlessly but also resonates deeply with customers.       
+      </p>
+    </div>
+  </header>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <p class="pb-4">At the heart of successful web design lies the ability to blend intuitive functionality with bespoke elements tailored to your brand's unique identity.
+    </p>
+
+    <h2 class="font-bold">Crafting a Tailored Digital Experience</h2>
+    <p class="pb-4">Every brand has its own voice, style, and message, and your website should embody these qualities. Bespoke web design ensures that every detail, from the layout to the colour palette, aligns with your brand's ethos. This creates an authentic, memorable online presence that sets you apart from competitors.</p>
+
+    <p class="pb-4">A bespoke design approach allows businesses to:</p>
+
+    <ul class="list-disc pl-12 pb-4">
+        <li>Showcase their unique personality through tailored visuals and content.</li>
+        <li>Build trust with users by ensuring consistency across all touchpoints.</li>
+        <li>Incorporate features and interactions that specifically cater to their audience’s needs.</li>
+    </ul>
+
+    <p class="pb-4">For instance, a boutique bakery might opt for warm, inviting visuals and interactive elements like a customizable menu builder. In contrast, a tech startup might prioritize a cutting-edge design that emphasizes innovation and sleek navigation.</p>
+
+    <h2 class="font-bold">Delivering Seamless Functionality</h2>
+    <p class="pb-4">While bespoke branding captures attention, functionality keeps users engaged. A truly effective website is one that works flawlessly, offering an effortless experience to users. From clear navigation to fast-loading pages, seamless functionality ensures visitors stay longer, explore more, and convert into customers.</p>
+
+    <p class="pb-4">Features that elevate functionality include:</p>
+    <ul class="list-disc pl-12 pb-4">
+        <li>Scalable Designs: Websites that grow alongside your business needs.</li>
+        <li>Custom User Journeys: Personalizing the path visitors take based on their interests.</li>
+        <li>Optimized Performance: Ensuring your site is fast and secure, no matter how users access it.</li>
+    </ul>
+
+    <h2 class="font-bold">Bringing it all together</h2>
+    <p class="pb-4">The art of web design lies in uniting tailored branding with top-tier functionality. By doing so, your website becomes more than just a tool. It becomes an extension of your business’s personality and an enabler of meaningful connections.</p>
+
+  </section>
+  
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col px-4 pb-32">
+        <h3 class="text-royalPlum text-7xl font-bold text-center pt-32">Ready to discuss your project?</h3>
+        <ContactForm />
+    </section>
+
 </Layout>

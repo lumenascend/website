@@ -1,7 +1,61 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Background from '../../assets/img/services/complex-problem-solving.jpg';
+import ContactForm from '../../components/Contact-form.astro';
+const pageTitle = 'Digital Blueprints';
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle}>
+    <header class="relative h-[75vh] bg-fixed bg-center bg-cover" style={`background-image: url(${Background.src});`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-royalPlum to-transparent opacity-80"></div>
     
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white max-w-7xl mx-auto">
+      <h1 class="text-7xl font-bold py-16">{pageTitle}</h1>
+      <p class="text-3xl text-center">
+        Design Blueprints refer to detailed visual representations that map out the structure, flow, and functionality of a digital product similar to architectural blueprints for a building.
+        They help teams visualize the overall layout, interactions, and user journey before moving into high-fidelity design or development.      </p>
+    </div>
+  </header>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <p class="pb-4">Blueprints help teams visualize the overall layout, interactions, and user journey before moving into high-fidelity design or development.</p>
+    
+    <h2 class="font-bold">Common Types of Blueprints in Product Design</h2>
+
+    <h2 class="font-bold">User Flow Diagrams</h2>
+    <ul class="list-disc pl-12 pb-4">
+        <li>Show the path a user takes to complete tasks within the product.</li>
+        <li>Useful for understanding how screens connect and what decisions users make at each step.</li>
+    </ul>
+
+    <h2 class="font-bold">Wireframes</h2>
+    <ul class="list-disc pl-12 pb-4">
+        <li>Low-fidelity layouts of screens showing basic structure, content placement, and functionality.</li>
+        <li>Focus on layout and hierarchy, not visual style.</li>
+    </ul>
+
+    <h2 class="font-bold">Sitemaps</h2>
+    <ul class="list-disc pl-12 pb-4">
+        <li>Visual outlines of all pages or screens in a product, organized hierarchically.</li>
+        <li>Help plan navigation and information architecture.</li>
+    </ul>
+
+    <h2 class="font-bold">Journey Maps</h2>
+    <ul class="list-disc pl-12 pb-4">
+        <li>Charts that show the user's experience across different touchpoints, including emotions, pain points, and opportunities.</li>
+        <li>Useful for aligning product features with user needs.</li>
+    </ul>
+
+    <h2 class="font-bold">Prototypes</h2>
+    <ul class="list-disc pl-12 pb-4">
+        <li>Interactive blueprints that simulate how users interact with the interface.</li>
+        <li>Used for testing and stakeholder review before development begins.</li>
+    </ul>
+
+  </section>
+  
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col px-4 pb-32">
+        <h3 class="text-royalPlum text-7xl font-bold text-center pt-32">Ready to discuss your project?</h3>
+        <ContactForm />
+    </section>
+
 </Layout>

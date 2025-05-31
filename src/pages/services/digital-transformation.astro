@@ -1,7 +1,58 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Background from '../../assets/img/services/complex-problem-solving.jpg';
+import ContactForm from '../../components/Contact-form.astro';
+const pageTitle = 'Digital Transformation';
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle}>
+    <header class="relative h-[75vh] bg-fixed bg-center bg-cover" style={`background-image: url(${Background.src});`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-royalPlum to-transparent opacity-80"></div>
     
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white max-w-7xl mx-auto">
+      <h1 class="text-7xl font-bold py-16">{pageTitle}</h1>
+      <p class="text-3xl text-center">
+        In today's fast-paced world, businesses need to adapt quickly to changing demands and technological advancements. <br />
+
+        The most effective ways to streamline operations and improve efficiency is through digital transformation.      </p>
+    </div>
+  </header>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+
+    <p class="pb-4">
+        Manual processes, while functional, often come with significant drawbacks. They're time-consuming, prone to human error, and can become bottlenecks as businesses scale. Whether it's managing client data, tracking inventory, or coordinating team schedules, relying on manual tools limits innovation and slows growth.
+    </p>
+
+    <h2 class="font-bold">The Transformation Journey</h2>
+    <ol class="list-decimal pl-12 pb-4">
+        <li>Identifying Challenges: Pinpoint inefficiencies in current processes that slow your team down.</li>
+        <li>Setting Clear Goals: Define what a better solution looks like—automation, speed, or accuracy.</li>
+        <li>Developing a Solution: Build software that aligns with your needs, from tracking inventory to automating data.</li>
+        <li>Testing and Improving: Refine the tool based on user feedback to ensure seamless functionality.</li>
+        <li>Scaling and Innovating: As your business evolves, your software can adapt and integrate with other systems.</li>
+    </ol>
+
+    <h2 class="font-bold">Researching Users & Context</h2>
+    <p class="pb-4">Take a company managing customer service tickets with spreadsheets. Transitioning to a custom ticketing system could automate task routing, enhance team collaboration, and deliver a smoother experience for both employees and customers.</p>
+
+    <h2 class="font-bold">The Benefits of Bespoke Software</h2>
+    
+    <ul class="list-disc pl-12 pb-4">
+        <li>Efficiency: Reduce repetitive tasks and free up resources.</li>
+        <li>Scalability: Adapt solutions as your business grows.</li>
+        <li>Accuracy: Minimize errors and ensure reliable outcomes.</li>
+        <li>Test it with real users to ensure it works seamlessly</li>
+        <li>Innovation: Enable employees to focus on strategic goals.</li>
+    </ul>
+
+    <p class="pb-4">
+        Digital transformation isn't just about technology; it's about enabling growth and unlocking potential. By replacing outdated tools with modern solutions, businesses can thrive in an increasingly digital world.
+    </p>
+  </section>
+  
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col px-4 pb-32">
+        <h3 class="text-royalPlum text-7xl font-bold text-center pt-32">Ready to discuss your project?</h3>
+        <ContactForm />
+    </section>
+
 </Layout>

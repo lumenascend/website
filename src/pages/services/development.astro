@@ -1,7 +1,40 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Background from '../../assets/img/services/complex-problem-solving.jpg';
+import ContactForm from '../../components/Contact-form.astro';
+const pageTitle = 'Web Development';
 ---
 
-<Layout>
+<Layout pageTitle={pageTitle}>
+    <header class="relative h-[75vh] bg-fixed bg-center bg-cover" style={`background-image: url(${Background.src});`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-royalPlum to-transparent opacity-80"></div>
     
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white max-w-7xl mx-auto">
+      <h1 class="text-7xl font-bold py-16">{pageTitle}</h1>
+      <p class="text-3xl text-center">
+        Starting a new business means turning bold ideas into real-world digital solutions. At the heart of that journey is the Minimum Viable Product of every business idea.       
+      </p>
+    </div>
+  </header>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <p class="pb-4">Speed and focus are everything in the early stages of a business. That is why we help you strip your concept down to its core functionality. We collaborate to define the essential features your users need to experience the value of your product. This helps you avoid bloated development cycles and wasted investment. You can validate your idea faster and move forward with confidence.</p>
+
+    <h2 class="font-bold">Test Your Idea with Real Users</h2>
+    <p class="pb-4">Launching an MVP allows you to gather feedback and data from actual users as early as possible. We help you build with iteration in mind. Our approach focuses on getting your product in front of people quickly so you can learn what works and what needs improvement. These insights help guide your next steps with clarity and purpose.</p>
+
+    <h2 class="font-bold">Flexible and Scalable from Day One</h2>
+    <p class="pb-4">Your MVP is only the beginning. We lay the foundation for a web application that can grow with you. Whether you plan to expand your features or shift direction based on user input, we make sure your application is built with scalability in mind. Clean code, modular architecture and modern technologies ensure you are ready for what comes next.</p>
+
+    <h2 class="font-bold">We understand Startups</h2>
+    <p class="pb-4">Been there, done that. We are partners who understand the unique pressures of starting a business. We know how to navigate limited budgets, short timelines and the need to impress users and investors alike. Our process keeps you involved and focused on results from day one.</p>
+
+    <h2 class="font-bold">Bring Your Idea to Life</h2>
+    <p class="pb-4">If you are ready to build your MVP and take the first step toward launching your business, we are here to help. Reach out today and start building a web application that turns your idea into something real. Simple. Focused. Ready to grow.</p>
+  </section>
+  
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col px-4 pb-32">
+        <h3 class="text-royalPlum text-7xl font-bold text-center pt-32">Ready to discuss your project?</h3>
+        <ContactForm />
+    </section>
+
 </Layout>
