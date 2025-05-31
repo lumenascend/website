@@ -1,0 +1,101 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Background from '../../assets/img/services/design-generation.jpg';
+import ContactForm from '../../components/Contact-form.astro';
+const pageTitle = 'Design Generation';
+---
+
+<Layout pageTitle={pageTitle}>
+    <header class="relative h-[75vh] bg-fixed bg-center bg-cover" style={`background-image: url(${Background.src});`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-royalPlum to-transparent opacity-80"></div>
+    
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white max-w-7xl mx-auto">
+      <h1 class="text-7xl font-bold py-16">{pageTitle}</h1>
+      <p class="text-3xl text-center">
+        At the heart of great design is solving real problems - whether it's a business obstacle, user frustration, or a gap in the market. Our "Design Generation" service focuses on creating user-focused solutions that are not only functional but intuitive and valuable.      </p>
+    </div>
+  </header>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <p class="pb-4">Design generation refers to the use of AI-powered or rule-based tools to automatically create or suggest user interface layouts, components, and design systems based on user needs, content, or business goals. Instead of building screens from scratch, designers can input basic requirements—like a user flow, brand guidelines, or key features—and the system generates design mockups or wireframes that follow best practices for usability and accessibility. This speeds up the ideation process, supports rapid prototyping, and helps maintain consistency across digital products. Tools like Figma (with plugins like Autoname or Magician) and Framer are increasingly integrating generative capabilities, allowing designers to focus more on strategy and user empathy while letting automation handle repetitive layout and styling tasks.</p>
+
+    <h2 class="font-bold">UX (User Experience) Design</h2>
+    <p class="pb-4">The objective is to ensure the product is useful, usable, and enjoyable for the user.</p>
+
+    <h2 class="font-bold">What UX design involves</h2>
+    <ul class="list-disc pl-12">
+        <li>User Research</li>
+        <ul class="list-disc pl-12">
+            <li>Conducting interviews, surveys, and usability tests</li>
+            <li>Analysing user behaviour and needs</li>
+        </ul>
+        <li>Information Architecture (IA)</li>
+        <ul class="list-disc pl-12">
+            <li>Structuring content and navigation logically</li>
+        </ul>
+        <li>User Flows & Journey Mapping</li>
+        <ul class="list-disc pl-12">
+            <li>Mapping out the steps users take to complete tasks</li>
+        </ul>
+        <li>Wireframing</li>
+        <ul class="list-disc pl-12">
+            <li>Sketching low-fidelity screen layouts to show structure and flow</li>
+        </ul>
+        <li>Prototyping</li>
+        <ul class="list-disc pl-12">
+            <li>Creating interactive models for testing user interaction</li>
+        </ul>
+        <li>Usability Testing</li>
+        <ul class="list-disc pl-12">
+            <li>Observing users as they interact with the product and identifying pain points</li>
+        </ul>
+        <li>Iteration</li>
+        <ul class="list-disc pl-12">
+            <li>Using feedback to improve the product over time</li>
+        </ul>
+    </ul>
+
+
+
+    <h2 class="font-bold">UI (User Interface) Design </h2>
+    <p class="pb-4">The goal is to make the product visually appealing, intuitive, and aligned with brand identity.</p>
+    <ul class="list-disc pl-12">
+        <li>Visual Design</li>
+        <ul class="list-disc pl-12">
+            <li>Typography, color schemes, layout, and iconography</li>
+        </ul>
+        <li>Design Systems</li>
+        <ul class="list-disc pl-12">
+            <li>Creating reusable components (e.g., buttons, cards) that ensure consistency</li>
+        </ul>
+        <li>High-Fidelity Mockups</li>
+        <ul class="list-disc pl-12">
+            <li>Pixel-perfect screens that represent the final look</li>
+        </ul>
+        <li>Interaction Design</li>
+        <ul class="list-disc pl-12">
+            <li>Animations, transitions, hover states, and microinteractions</li>
+        </ul>
+        <li>Responsiveness</li>
+        <ul class="list-disc pl-12">
+            <li>Ensuring designs work well on different screen sizes/devices</li>
+        </ul>
+        <li>Accessibility</li>
+        <ul class="list-disc pl-12">
+            <li>Making interfaces usable by people of all abilities</li>
+        </ul>
+    </ul>
+    <p class="pb-4">UX (User Experience) focuses on how a product works—making it useful, usable, and satisfying by understanding user needs, designing flows, and testing interactions.</p>
+
+    <p class="pb-4">UI (User Interface) focuses on how a product looks and feels—creating visually appealing, consistent, and accessible designs through layout, colour, typography, and interactive elements.</p>
+    
+    <p>Together, UX and UI ensure a product is both functional and delightful, combining strategy and structure (UX) with visual and interactive design (UI) to deliver a seamless user experience.</p>
+    
+    
+  </section>
+  
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col px-4 pb-32">
+        <h3 class="text-royalPlum text-7xl font-bold text-center pt-32">Ready to discuss your project?</h3>
+        <ContactForm />
+    </section>
+
+</Layout>

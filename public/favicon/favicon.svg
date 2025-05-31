@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="65"><svg width="51" height="65" viewBox="0 0 51 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35.5944 48.2842C31.3175 50.2598 26.5539 50.3539 26.5539 50.3539C26.5539 50.3539 20.4989 50.4762 15.4359 47.7009" stroke="url(#paint0_linear_113_7)" stroke-width="4" stroke-miterlimit="10"></path>
+<path d="M35.5289 55.1424C31.2801 57.0991 26.5539 57.1932 26.5539 57.1932C26.5539 57.1932 20.5363 57.3155 15.5107 54.5591" stroke="url(#paint1_linear_113_7)" stroke-width="3" stroke-miterlimit="10"></path>
+<path d="M32.5622 61.7842C29.5674 63.1671 26.2358 63.2329 26.2358 63.2329C26.2358 63.2329 21.9963 63.3176 18.4587 61.3796" stroke="url(#paint2_linear_113_7)" stroke-width="3" stroke-miterlimit="10"></path>
+<path d="M12.6002 44.3425C12.6002 44.3425 11.1496 43.2701 9.83003 41.8683C8.6602 40.6265 3.23218 33.8342 3.00757 26.2329C2.70809 16.2796 11.3181 3.29711 25.1408 3.00547C37.6346 2.73265 47.9853 12.6953 48.2473 25.2545C48.4438 34.3422 41.8086 41.6708 40.5171 42.8373C39.3566 43.8816 38.0838 44.7376 38.0838 44.7376" stroke="url(#paint3_linear_113_7)" stroke-width="5" stroke-miterlimit="10"></path>
+<defs>
+<linearGradient id="SvgjsLinearGradient1012" x1="14.5374" y1="49.2681" x2="36.3488" y2="48.8667" gradientUnits="userSpaceOnUse">
+<stop offset="0.02" stop-color="#9B05B7"></stop>
+<stop offset="0.43" stop-color="#EE8565"></stop>
+<stop offset="0.61" stop-color="#F4806D"></stop>
+<stop offset="0.89" stop-color="#F0976A"></stop>
+<stop offset="0.96" stop-color="#F7AF7F"></stop>
+<stop offset="1" stop-color="#FCBF8D"></stop>
+</linearGradient>
+<linearGradient id="SvgjsLinearGradient1011" x1="14.8314" y1="56.0843" x2="36.1" y2="55.6929" gradientUnits="userSpaceOnUse">
+<stop offset="0.02" stop-color="#9B05B7"></stop>
+<stop offset="0.24" stop-color="#F3796B"></stop>
+<stop offset="0.43" stop-color="#EE8565"></stop>
+<stop offset="0.61" stop-color="#F4806D"></stop>
+<stop offset="0.89" stop-color="#F0976A"></stop>
+<stop offset="0.96" stop-color="#F7AF7F"></stop>
+<stop offset="1" stop-color="#FCBF8D"></stop>
+</linearGradient>
+<linearGradient id="SvgjsLinearGradient1010" x1="17.7852" y1="62.4748" x2="33.1308" y2="62.1923" gradientUnits="userSpaceOnUse">
+<stop offset="0.02" stop-color="#9B05B7"></stop>
+<stop offset="0.11" stop-color="#D24D44"></stop>
+<stop offset="0.13" stop-color="#D9574D"></stop>
+<stop offset="0.16" stop-color="#E76A5D"></stop>
+<stop offset="0.2" stop-color="#F07567"></stop>
+<stop offset="0.24" stop-color="#F3796B"></stop>
+<stop offset="0.43" stop-color="#EE8565"></stop>
+<stop offset="0.61" stop-color="#F4806D"></stop>
+<stop offset="0.89" stop-color="#F0976A"></stop>
+<stop offset="0.96" stop-color="#F7AF7F"></stop>
+<stop offset="1" stop-color="#FCBF8D"></stop>
+</linearGradient>
+<linearGradient id="SvgjsLinearGradient1009" x1="0.629189" y1="24.3491" x2="50.5557" y2="23.2827" gradientUnits="userSpaceOnUse">
+<stop offset="0.02" stop-color="#6C0080"></stop>
+<stop offset="0.11" stop-color="#9B05B7"></stop>
+<stop offset="0.13" stop-color="#9B05B7"></stop>
+<stop offset="0.43" stop-color="#EE8565"></stop>
+<stop offset="0.61" stop-color="#F4806D"></stop>
+<stop offset="0.89" stop-color="#D24D44"></stop>
+<stop offset="0.96" stop-color="#D24D44"></stop>
+<stop offset="1" stop-color="#D24D44"></stop>
+</linearGradient>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

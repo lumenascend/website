@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Background from '../../assets/img/services/complex-problem-solving.jpg';
+import ContactForm from '../../components/Contact-form.astro';
+const pageTitle = 'Complex Problem Solving';
+---
+
+<Layout pageTitle={pageTitle}>
+    <header class="relative h-[75vh] bg-fixed bg-center bg-cover" style={`background-image: url(${Background.src});`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-royalPlum to-transparent opacity-80"></div>
+    
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white max-w-7xl mx-auto">
+      <h1 class="text-7xl font-bold py-16">{pageTitle}</h1>
+      <p class="text-3xl text-center">
+        Complex problem solving with product design means tackling challenging, often multi-layered issues by creating thoughtful, user-centered solutions — usually in the form of a digital or physical product.
+      </p>
+    </div>
+  </header>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="font-bold">Understanding the Problem Deeply</h2>
+    <p class="pb-4">We start by identifying the core challenge, whether it's inefficiency, confusion, or unmet needs. Every design we create begins with a thorough understanding of the issue at hand.</p>
+
+    <h2 class="font-bold">Researching Users & Context</h2>
+    <p class="pb-4">Through targeted research, we uncover insights into how real people interact with your product. By observing user behaviour and pinpointing friction points, we gain a clear picture of what they need and how best to help.</p>
+
+    <h2 class="font-bold">Generating Creative Ideas</h2>
+    <p class="pb-4">Our brainstorming sessions explore multiple angles, sparking innovative solutions that tackle the problem head-on often in ways that surprise and delight users.</p>
+
+    <h2 class="font-bold">Prototyping & Testing</h2>
+    <p class="pb-4">Early iterations of the design are built and tested with real users. This helps us identify what works, what doesn’t, and refine the solution before it’s scaled.</p>
+
+    <h2 class="font-bold">Iterating for Perfection</h2>
+    <p class="pb-4">Feedback drives our process as we polish and refine the design to create a solution that is effective, user-friendly, and impactful.</p>
+
+    <h2 class="font-bold">Example in Action</h2>
+    <p class="pb-4">Imagine the challenge of booking doctor appointments online—it’s confusing, inaccessible, or time-consuming. </p>
+
+    <p class="pb-4">We will:</p>
+    <ul class="list-disc pl-12">
+        <li>Research why users struggle</li>
+        <li>Map out the user journey to highlight pain points</li>
+        <li>Design a streamlined, intuitive interface</li>
+        <li>Test it with real users to ensure it works seamlessly</li>
+        <li>Launch the improved solution as part of a broader healthcare platform</li>
+    </ul>
+  </section>
+  
+    <section class="mx-auto max-w-7xl text-3xl justify-content-center flex flex-col px-4 pb-32">
+        <h3 class="text-royalPlum text-7xl font-bold text-center pt-32">Ready to discuss your project?</h3>
+        <ContactForm />
+    </section>
+
+</Layout>
